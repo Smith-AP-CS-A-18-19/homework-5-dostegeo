@@ -32,6 +32,9 @@ return substring;
 	 * an example
 	 */
 	public boolean contains(String s) {
+		/* String does not have a contains method.
+		 * It does, however, have an indexOf method...
+		 */
 if(george.contains(s)){
 	return true;
 }else{
