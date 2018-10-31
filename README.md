@@ -11,5 +11,5 @@ Make sure that you include your first and last name in the comment section at th
 
 ## Feedback
 Failed to compile
-See my notes in te java file to see where it fails...
-0/10
+See my notes in the java file to see where it fails...
+00/10
