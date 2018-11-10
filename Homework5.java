@@ -3,13 +3,14 @@ public class Homework5 {
 	/* Finish the constructor and create any necessary instance
 	 * variables
 	 */
-	 private String george;
-	 private int x;
-	 private int y;
+
+	private int a;
+	private int b;
+	private String s;
 	public Homework5(String s, int a, int b) {
-george = s;
-x = a;
-y = b;
+this.a = a;
+this.b = b;
+this.s = s;
 	}
 
 	/* Return a substring of the stored String, starting at index with
@@ -22,7 +23,7 @@ y = b;
 	 */
 	public String substring(int index, int length) {
 int totI = index + length;
-String substring = george.substring(index, totI);
+String substring = s.substring(index, totI);
 return substring;
 	}
 
@@ -35,7 +36,8 @@ return substring;
 		/* String does not have a contains method.
 		 * It does, however, have an indexOf method...
 		 */
-if(george.contains(s)){
+		 int search = s.indexOf(s);
+if(search > -1){
 	return true;
 }else{
 	return false;
@@ -46,16 +48,13 @@ if(george.contains(s)){
 	/* Return the larger of the two stored numbers
 	 */
 	public static int max() {
-		int y;
-		int x;
-if (x>y){
-	return x;
+if (a > b){
+	return a;
 }else{
-	return y;
-
+	return b;
 }
 
-}}
+}
 
 
 	public static void main(String[] args) {
