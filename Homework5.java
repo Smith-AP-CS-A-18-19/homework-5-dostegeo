@@ -23,8 +23,14 @@ this.s = s;
 	 */
 	public String substring(int index, int length) {
 int totI = index + length;
+if(totI < s.length()){
 String substring = s.substring(index, totI);
 return substring;
+}
+else{
+	return s.substring(index);
+}
+
 	}
 
 	/* Return true if the stored String contains the provided String,
@@ -32,11 +38,11 @@ return substring;
 	 * keywords in Java; I have provided a default return value as
 	 * an example
 	 */
-	public boolean contains(String s) {
+	public boolean contains(String str) {
 		/* String does not have a contains method.
 		 * It does, however, have an indexOf method...
 		 */
-		 int search = s.indexOf(s);
+		 int search = s.indexOf(str);
 if(search > -1){
 	return true;
 }else{
@@ -47,7 +53,7 @@ if(search > -1){
 
 	/* Return the larger of the two stored numbers
 	 */
-	public static int max() {
+	public int max() {
 if (a > b){
 	return a;
 }else{
